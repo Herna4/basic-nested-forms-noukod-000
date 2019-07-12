@@ -15,9 +15,8 @@
  
   private
  
-      def person_params
-      params.require(:person).permit(
-        :name,
+  def person_params
+    params.require(:person).permit( :name,
         addresses_attributes: [
           :street_address_1,
           :street_address_2,
@@ -27,7 +26,7 @@
           :address_type
         ]
       )
-    end
+  end
 
 
 end
